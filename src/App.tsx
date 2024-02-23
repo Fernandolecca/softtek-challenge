@@ -1,9 +1,9 @@
-import { Logo } from "./assets/icons/Logo";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <Logo type="main" />
+      <Home />
     </div>
   );
 }

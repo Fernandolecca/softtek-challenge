@@ -1,0 +1,32 @@
+@use "../base/root";
+
+.header {
+  height: 64px;
+  background-color: transparent;
+
+  .header__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__contact {
+    display: flex;
+    align-self: center;
+    gap: 8px;
+    color: var(--clr-secondary-900);
+
+    .header__contact__banner {
+      font-size: var(--f-size-12);
+      line-height: var(--f-height-16);
+      font-weight: var(--f-weight-semibold);
+    }
+
+    .header__contact__phone {
+      font-size: var(--f-size-18);
+      line-height: var(--f-height-20);
+      font-weight: var(--f-weight-bold);
+    }
+  }
+}
