@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+:root {
+  @each $key, $palette in $colors {
+    @each $amount, $color in $palette {
+      --clr-#{$key}-#{$amount}: #{$color};
+    }
+  }
+
+  @each $key, $value in $f-families {
+    --f-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $f-size-scale {
+    --f-size-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $f-height-scale {
+    --f-height-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $f-weights {
+    --f-weight-#{$key}: #{$value};
+  }
+
+  --bg-gradient: #{$bg-gradient};
+}

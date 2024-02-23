@@ -1,0 +1,59 @@
+@use "sass:color";
+
+// Map for creating utility classes from color scheme.
+$colors: (
+  "primary": (
+    100: color.scale(#f7052d, $lightness: 80%),
+    200: color.scale(#f7052d, $lightness: 70%),
+    300: color.scale(#f7052d, $lightness: 60%),
+    400: color.scale(#f7052d, $lightness: 50%),
+    500: color.scale(#f7052d, $lightness: 40%),
+    600: color.scale(#f7052d, $lightness: 30%),
+    700: color.scale(#f7052d, $lightness: 20%),
+    800: color.scale(#f7052d, $lightness: 10%),
+    900: color.scale(#f7052d, $lightness: 0%)
+  ),
+  "secondary": (
+    100: color.scale(#03050f, $lightness: 80%),
+    200: color.scale(#03050f, $lightness: 70%),
+    300: color.scale(#03050f, $lightness: 60%),
+    400: color.scale(#03050f, $lightness: 50%),
+    500: color.scale(#03050f, $lightness: 40%),
+    600: color.scale(#03050f, $lightness: 30%),
+    700: color.scale(#03050f, $lightness: 20%),
+    800: color.scale(#03050f, $lightness: 10%),
+    900: color.scale(#03050f, $lightness: 0%)
+  ),
+  "accent": (
+    100: color.scale(#4f4fff, $lightness: 80%),
+    200: color.scale(#4f4fff, $lightness: 70%),
+    300: color.scale(#4f4fff, $lightness: 60%),
+    400: color.scale(#4f4fff, $lightness: 50%),
+    500: color.scale(#4f4fff, $lightness: 40%),
+    600: color.scale(#4f4fff, $lightness: 30%),
+    700: color.scale(#4f4fff, $lightness: 20%),
+    800: color.scale(#4f4fff, $lightness: 10%),
+    900: color.scale(#4f4fff, $lightness: 0%)
+  ),
+  "success": (
+    100: color.scale(#389e0d, $lightness: 80%),
+    200: color.scale(#389e0d, $lightness: 70%),
+    300: color.scale(#389e0d, $lightness: 60%),
+    400: color.scale(#389e0d, $lightness: 50%),
+    500: color.scale(#389e0d, $lightness: 40%),
+    600: color.scale(#389e0d, $lightness: 30%),
+    700: color.scale(#389e0d, $lightness: 20%),
+    800: color.scale(#389e0d, $lightness: 10%),
+    900: color.scale(#389e0d, $lightness: 0%)
+  )
+);
+
+// gradients
+
+$bg-gradient: linear-gradient(
+  45deg,
+  rgba(195, 51, 255, 1) 4%,
+  rgba(255, 255, 255, 1) 18%,
+  rgba(255, 255, 255, 1) 82%,
+  rgba(0, 244, 224, 1) 100%
+);
