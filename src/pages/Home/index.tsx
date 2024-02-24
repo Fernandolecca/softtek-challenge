@@ -1,5 +1,6 @@
 import { Header } from "../../components/shared/Header";
 import { HeroBanner } from "./HeroBanner";
+import { Footer } from "../../components/shared/Footer";
 
 export function Home() {
   return (
@@ -8,6 +9,7 @@ export function Home() {
       <div className="container">
         <HeroBanner />
       </div>
+      <Footer />
     </div>
   );
 }
