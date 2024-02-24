@@ -30,3 +30,17 @@
     }
   }
 }
+
+@media (max-width: 412px) {
+  .header {
+    height: 56px;
+  }
+
+  .header__contact__banner {
+    display: none;
+  }
+
+  .header__contact__phone {
+    font-size: var(--f-size-16);
+  }
+}
