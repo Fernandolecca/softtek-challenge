@@ -1,0 +1,67 @@
+@use "../base/root";
+
+.banner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  color: var(--clr-secondary-800);
+
+  .banner-form__description {
+    font-size: var(--f-size-14);
+    font-weight: var(--f-weight-semibold);
+    line-height: var(--f-height-20);
+  }
+
+  .banner-form__dropdown {
+    display: flex;
+
+    & > * {
+      flex-basis: 100%;
+      border: 1px solid var(--clr-secondary-700);
+    }
+
+    & > select {
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+    }
+
+    & > input {
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+    }
+  }
+
+  .banner-form__phone {
+    border: 1px solid var(--clr-secondary-700);
+    border-radius: 0.5em;
+  }
+
+  .banner-form__policies {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+
+    & label {
+      display: flex;
+      gap: 12px;
+    }
+
+    & [type="checkbox"] {
+      height: 20px;
+      width: 20px;
+    }
+
+    & span {
+      font-size: var(--f-size-12);
+      font-weight: var(--f-weight-regular);
+      line-height: var(--f-height-20);
+    }
+  }
+
+  .banner-form__terms {
+    color: var(--clr-secondary-900);
+    font-size: var(--f-size-12);
+    font-weight: var(--f-weight-bold);
+    line-height: var(--f-height-20);
+  }
+}

@@ -96,6 +96,12 @@ textarea {
   margin: 0; /* 2 */
 }
 
+input,
+select {
+  outline: none;
+  padding: 1rem;
+}
+
 button,
 input {
   overflow: visible;
@@ -153,6 +159,7 @@ textarea {
 [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
+  accent-color: var(--clr-secondary-900);
 }
 
 [type="number"]::-webkit-inner-spin-button,

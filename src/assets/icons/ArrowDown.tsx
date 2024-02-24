@@ -1,0 +1,21 @@
+type Props = {
+  width?: number;
+  height?: number;
+};
+
+export function ArrowDown({ width = 14, height = 9 }: Props) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 14 9"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.00003 8.89365L0.493774 2.38115L2.25628 0.618652L7.00003 5.35615L11.7438 0.618652L13.5063 2.38115L7.00003 8.89365Z"
+        fill="#03050F"
+      />
+    </svg>
+  );
+}
