@@ -26,6 +26,7 @@
     }
 
     & > input {
+      width: 50%;
       border-top-right-radius: 0.5em;
       border-bottom-right-radius: 0.5em;
     }
@@ -63,5 +64,21 @@
     font-size: var(--f-size-12);
     font-weight: var(--f-weight-bold);
     line-height: var(--f-height-20);
+  }
+}
+
+@media (max-width: 412px) {
+  .banner-form {
+    .banner-form__policies {
+      gap: 1em;
+    }
+
+    .banner-form__btn {
+      width: 100%;
+      height: 56px;
+      margin-top: 16px;
+      font-size: var(--f-size-18);
+      line-height: var(--f-height-20);
+    }
   }
 }

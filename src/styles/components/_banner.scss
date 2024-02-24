@@ -1,6 +1,7 @@
 @use "../base/root";
 
 .hero-banner {
+  width: 100%;
   color: var(--clr-secondary-900);
 
   .hero-banner__bg {
@@ -39,5 +40,50 @@
   .hero-banner__form {
     grid-column: 8 / span 4;
     grid-row: 2 / 3;
+  }
+}
+
+@media (max-width: 412px) {
+  .hero-banner {
+    place-items: center;
+
+    .hero-banner__bg {
+      grid-column: 3 / span 2;
+      grid-row: 1 / 2;
+      height: 193px;
+
+      & > img {
+        height: 188px;
+        border-radius: 8px;
+      }
+    }
+
+    .hero-banner__cta {
+      grid-column: 1 / span 2;
+      grid-row: 1 / 2;
+      align-self: center;
+
+      & > span {
+        font-size: var(--f-size-12);
+        padding: 8px 2px;
+        border-radius: 4px;
+        background: var(--label-gradient);
+      }
+
+      & > h1 {
+        font-size: var(--f-size-28);
+        font-weight: var(--f-weight-bold);
+        line-height: var(--f-height-36);
+      }
+    }
+
+    .hero-banner__form {
+      width: 100%;
+      grid-column: 1 / span 4;
+      grid-row: 2 / 3;
+      margin-top: 24px;
+      padding: 24px 0;
+      border-top: 0.5px solid var(--clr-accent-500);
+    }
   }
 }

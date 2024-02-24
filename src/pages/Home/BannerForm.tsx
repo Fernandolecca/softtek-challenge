@@ -48,7 +48,7 @@ export function BannerForm() {
         Aplican Términos y Condiciones.
       </a>
 
-      <Button type="submit" color="secondary">
+      <Button type="submit" color="secondary" className="banner-form__btn">
         Cotiza aquí
       </Button>
     </form>
