@@ -10,8 +10,50 @@
     justify-content: space-between;
     align-items: center;
 
+    .footer__logo-horizontal {
+      display: none;
+    }
+
+    & > hr {
+      display: none;
+    }
+
     & > span {
       color: #fff;
+    }
+  }
+}
+
+.footer__logo--visible {
+  display: none;
+}
+
+@media (max-width: 412px) {
+  .footer {
+    height: 152px;
+
+    .footer__content {
+      flex-direction: column;
+      justify-content: space-around;
+
+      .footer__logo-horizontal {
+        display: block;
+      }
+
+      .footer__logo-vertical {
+        display: none;
+      }
+
+      & > hr {
+        display: block;
+        width: 100%;
+      }
+
+      & > span {
+        font-size: var(--f-size-12);
+        font-weight: var(--f-weight-14);
+        line-height: var(--f-height-20);
+      }
     }
   }
 }

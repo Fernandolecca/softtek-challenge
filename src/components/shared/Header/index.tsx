@@ -6,7 +6,7 @@ export function Header() {
     <header className="header">
       <div className="container">
         <div className="header__content">
-          <Logo type="main" />
+          <Logo type="main" direction="vertical" />
           <section className="header__contact">
             <span className="header__contact__banner">
               compra por este medio!
