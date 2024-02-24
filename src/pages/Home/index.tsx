@@ -4,7 +4,7 @@ import { Footer } from "../../components/shared/Footer";
 
 export function Home() {
   return (
-    <div className="background">
+    <div className="background home-layout">
       <Header />
       <div className="container">
         <HeroBanner />
