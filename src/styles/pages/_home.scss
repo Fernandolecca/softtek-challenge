@@ -1,3 +1,9 @@
+.background-home {
+  width: 100vw;
+  height: auto;
+  background: var(--bg-gradient);
+}
+
 .home-layout {
   display: flex;
   flex-direction: column;
