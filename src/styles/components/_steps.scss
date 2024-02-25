@@ -1,0 +1,59 @@
+@use "../base/root";
+
+.steps {
+  height: 56px;
+  background-color: color-mix(in lab, var(--clr-accent-100), #fff 70%);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.steps__content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  .step__indicator {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 24px;
+    font-size: var(--f-size-12);
+    font-weight: var(--f-weight-bold);
+  }
+
+  .step__separator {
+    width: 16px;
+    border: 1px dashed var(--clr-accent-900);
+    border-spacing: 0.5px;
+  }
+
+  .step__text {
+    font-size: var(--f-size-16);
+    line-height: var(--f-height-24);
+  }
+
+  .step__indicator--active {
+    background-color: var(--clr-accent-900);
+    color: #fff;
+  }
+
+  .step__indicator--inactive {
+    border: 1px solid var(--clr-secondary-700);
+    color: var(--clr-secondary-700);
+  }
+
+  .step__text--active {
+    font-weight: var(--f-weight-bold);
+  }
+
+  .step__text--inactive {
+    font-weight: var(--f-weight-regular);
+  }
+}
