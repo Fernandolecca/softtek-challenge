@@ -1,0 +1,44 @@
+@use "../base/root";
+
+.plan-selection {
+  padding: 40px 0;
+
+  .plan-selection__titles {
+    grid-column: 4 / span 6;
+    text-align: center;
+    margin-bottom: 32px;
+
+    & > h1 {
+      font-size: var(--f-size-40);
+      font-weight: var(--f-weight-semibold);
+      line-height: var(--f-height-48);
+    }
+
+    & > h2 {
+      font-size: var(--f-size-16);
+      font-weight: var(--f-weight-regular);
+      line-height: var(--f-height-28);
+    }
+  }
+
+  .plan-selection__tabs {
+    grid-column: 4 / span 6;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.comeback-arrow {
+  grid-column: 2 / span 11;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  & > span {
+    color: var(--clr-accent-900);
+    font-size: var(--f-size-18);
+    font-weight: var(--f-weight-regular);
+    line-height: var(--f-height-20);
+  }
+}

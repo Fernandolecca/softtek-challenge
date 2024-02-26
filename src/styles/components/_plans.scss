@@ -1,0 +1,11 @@
+.plan-selection__planlist {
+  grid-column: 3 / span 8;
+  display: flex;
+  gap: 32px;
+  height: 300px;
+  margin-top: 24px;
+
+  &:empty {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+@use "../base/root";
+
+.plan-selection-tab {
+  display: flex;
+  flex-direction: column;
+  height: 212px;
+  padding: 16px 24px 40px 24px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow:
+    0 1px 32px 0 var(--clr-accent-100),
+    0 1px 32px 0 #fff;
+
+  .plan-selection-tab__check {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    border: 0.5px solid var(--clr-secondary-500);
+    border-radius: 50%;
+    accent-color: var(--clr-success-900);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+  }
+
+  .plan-selection-tab__check:checked {
+    appearance: auto;
+    clip-path: circle(45% at 50% 50%);
+  }
+
+  & > h1 {
+    font-size: var(--f-size-20);
+    font-weight: var(--f-weight-bold);
+    line-height: var(--f-height-28);
+  }
+
+  & > p {
+    font-size: var(--f-size-12);
+    font-weight: var(--f-weight-regular);
+    line-height: var(--f-height-20);
+  }
+}
